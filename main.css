@@ -1,0 +1,14 @@
+.socials{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    max-width: 15%;
+ 
+}
+
+.header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
