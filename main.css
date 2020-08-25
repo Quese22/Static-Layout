@@ -1,14 +1,186 @@
-.socials{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    list-style-type: none;
-    max-width: 15%;
- 
+*{
+    margin: 0;
 }
-
 .header{
     display:flex;
+    justify-content:space-between;
+}
+#userDiv{
+    display:flex;
+    justify-content:flex-end;
+    overflow: hidden;
+    font-family: Arial;
+
+  }
+
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+/* this is the one that hides them */
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+
+  /* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+#logoDiv img{
+    height:46.03px;
+    width:201px;
+}
+#navbar{
+    display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    
+    height: 83px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 205px auto 104px;
+    grid-column-gap: 40px;
+    padding: 19px 20px;
+    z-index: 900;
+    transition: top 0.3s ease-in-out;
+}
+
+
+
+#section1{
+    background:linear-gradient(157deg, rgb(3, 49, 146) 26%, rgb(70, 26, 194) 99%);
+    background-size: cover;
+
+
+}
+#section1 img{
+    position: relative;
+    z-index: 2;
+    width: auto;
+    max-width: 200%;
+    padding-top:50px;
+    max-height: calc(100vh - 83px - 30px - 260px - 60px);
+}
+#section1 h1{
+    color:white;
+    font-size: 48px;
+    line-height: 48px;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+#section1 h3{
+    color:white;
+    padding: .3em;
+    max-width: 2000px;
+    text-align:center;
+    margin-top: 50px;
+}
+#section2Div{
+    background:rgb(244, 250, 250);
+    background-size: cover;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    
+}
+#section2{
+    background:rgb(244, 250, 250);
+    background-size: cover;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 500;
+    margin-bottom: 0;
+    padding: 3em;
+    
+}
+#section2 h3{
+    background:rgb(244, 250, 250);
+    display: block;
+    font-size: 20px;
+    font-style: italic;
+    margin-bottom: 12px;
+}
+#section2 ul{
+    display: grid;
+    background:rgb(244, 250, 250);
+    
+}
+
+#features{
+   /* flex-direction:row;
+    flex-wrap: wrap;
+    justify-content:space-between; */
+  
+    
+    padding-right: 300px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;     
+    
+    grid-template-columns: repeat(3,10px);
+    grid-template-rows: repeat(2,150px);
+    grid-gap:.1px 500px;
+    list-style-type:none;
+    
+}
+#section3{
+    background-image: url("https://www.kastapp.co/assets/pages/home/green-bg.jpg");
+    background-size: 100%;
+}
+
+.Main{
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding:3em;
+}
+
+#section3 h1{
+  
+    margin-bottom: 60px;
+    font-size:48px;
+    line-height:48px;
+    
+    color: rgb(255,255,255);
+}
+#section3 h3{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 34px;
+    color: rgb(255,255,255);
+}
+#openKast{
+    font-size: 18px;
+    height: 44px;
+    line-height: 44px;
+    min-width: 215px;
+    text-align: center;
+    background: #FE9000;
+    border-radius: 3px;
+    margin-top: 2em;
+    margin-bottom: 2em;
 }

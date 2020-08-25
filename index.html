@@ -1,214 +1,136 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
-    <title>StarWars.com | The Official Star Wars Website</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link type="text/css" href="main.css" rel="stylesheet" />
+    <title>Kast is Watch Parties Made Easy</title>
+  </head>
 
-</head>
-<body>
-    <div id="nav-container" class="full-nav"> 
-        <div id="nav-drawer-bg"></div>
-      
-        <div id="nav-inner-container">
-      
-          <span id="navbar">
-            <div id="nav-wrapper">
-              <div id="nav-header-bg">
-                <span class="nav-header-fade right"></span>
-                <span class="nav-header-fade left"></span>
-              </div>
-      
-              <div id="nav-external-links" class="social">
-                <ul id="social-links">
-                    <li>
-                      <a class="facebook" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" title="facebook">
-                        <span class="facebook-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="instagram" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer"  title="instagram">
-                        <span class="instagram-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="tumblr" href="https://starwars.tumblr.com/" target="_blank" rel="noopener noreferrer"  title="tumblr">
-                        <span class="tumblr-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="twitter" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer"  title="twitter">
-                        <span class="twitter-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="youtube" href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer" data-cto="social" title="youtube">
-                        <span class="youtube-icon"></span>
-                      </a>
-                    </li>
-                </ul>
-                <span class="kids-container">
-                  <a class="kids" href="https://lol.disney.com/star-wars" target="_blank" rel="noopener noreferrer" title="Star Wars Kids">
-                    <span class="kids-icon"></span>
-                  </a>
-                </span>
-              </div>
-              <a id="nav-logo-bar" href="/" itemprop="logo"  title="Star Wars Home"></a>
-              <a id="nav-logo" href="/" itemprop="logo" title="Star Wars Logo"></a>
-      
-              <div id="nav-utility-bar">
-                <div id="search-container" class="">
-                  <form id="topnav-search" class="nav-search top-nav" action="/search" method="GET">
-                      <div class="query-field">
-                        <input id="nav-search-input" name="q" type="text" placeholder="Search Star Wars" value="" spellcheck="false" autocorrect="off" autocapitalize="off" autocomplete="off">
-                      </div>
-                  </form>
-                  <button class="search-button"  id="search-close-icon"></button>
-                  <button class="search-button"  id="nav-search-icon" tabindex="0"></button>
-                </div>
-                <div class="nav-login show">
-                  <div class="logged-out-container"> 
-                    <div class="login log-in-out" role="button" tabindex="0">Log In</div>
-                      <p> // </p>
-                    <div class="signup log-in-out" role="button" tabindex="0">Sign Up</div>
-                  </div>
-                
-                  <div class="logged-in-container">
-                    <div class="display-user log-in-out">
-                      <span class="user" role="button" tabindex="0"></span>
-                      <span class="arrow"></span>
-                    </div>
-                    <div class="flyout">
-                      <div class="disid-login" role="button" >Account</div> 
-                      <div class="disid-signup" role="button" >Log Out</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </span>
-      
-          <div id="nav-drawer">
-            <nav id="nav-content">
-              <div class="nav-login show">
-                <div class="logged-out"> 
-                  <div class="disid-login log-in-out" role="button">Log In</div>
-                    <p> // </p>
-                  <div class="disid-signup log-in-out" role="button">Sign Up</div>
-                </div>
-              
-                <div class="logged-in">
-                  <div class="display-user log-in-out">
-                    <span class="disid-user" role="button"></span>
-                    <span class="arrow"></span>
-                  </div>
-                  <div class="disid-out">
-                    <div class="disid-login out-item" role="button">Account</div> 
-                    <div class="disid-signup out-item" role="button">Log Out</div>
-                  </div>
-                </div>
-              </div>
-      
-              <ul id="section-links" itemscope="" itemtype="https://www.schema.org/SiteNavigationElement">
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link news-content" href="/news" data-section="news">
-                      <p class="news-content-title"><span>News + Blog</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link video-content" href="/video" data-section="video">
-                      <p class="video-content-title"><span>Video</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link films-content" href="/films" data-section="films">
-                      <p class="films-content-title"><span>Films</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link tvshows-content" href="/series" data-section="tvshows">
-                      <p class="tvshows-content-title"><span>Series</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link gamesapps-content" href="/interactive" data-section="gamesapps">
-                      <p class="gamesapps-content-title"><span>Interactive</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link community-content" href="/community" data-section="community">
-                      <p class="community-content-title"><span>Community</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-                  <li itemprop="name">
-                    <a itemprop="url" class="section-link databank-content" href="/databank" data-section="databank">
-                      <p class="databank-content-title"><span>Databank</span><span class="vertical-bar"></span><span class="horizontal-bar"></span></p>
-                    </a>
-                  </li>
-              </ul>
-      
-              <div class="drawer-bottom">
-                <div class="sw-kids-container">
-                  <a class="sw-kids" href="https://lol.disney.com/star-wars" target="_blank" rel="noopener noreferrer" title="Star Wars Kids" >
-                    <span class="sw-kids-icon"></span>
-                  </a>
-                </div>
-                <ul id="social-links">
-                    <li>
-                      <a class="facebook" href="https://www.facebook.com/StarWars" target="_blank" rel="noopener noreferrer" title="facebook">
-                        <span class="facebook-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="instagram" href="https://www.instagram.com/starwars/" target="_blank" rel="noopener noreferrer"  title="instagram">
-                        <span class="instagram-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="tumblr" href="https://starwars.tumblr.com/" target="_blank" rel="noopener noreferrer"  title="tumblr">
-                        <span class="tumblr-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="twitter" href="https://twitter.com/starwars" target="_blank" rel="noopener noreferrer"  title="twitter">
-                        <span class="twitter-icon"></span>
-                      </a>
-                    </li>
-                    <li>
-                      <a class="youtube" href="https://www.youtube.com/user/starwars" target="_blank" rel="noopener noreferrer"  title="youtube">
-                        <span class="youtube-icon"></span>
-                      </a>
-                    </li>
-                </ul>
-              </div>
-            </nav>
-          </div>
-            <div id="countdown" class="hidden">
-              <ol>
-              </ol>
-            </div>
-          <div id="page-overlay"></div>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+    <header class="header">
+      <nav id="navbar">
+        <div id="logoDiv">
+          <img src="assets/kast-logo-horizontal-color-white.svg"x/>
         </div>
-      </div>
-      <div burger-wrapper>
-        <div id="background-styles" style="background-position: center top 173px;">
-            <div class="starfield star-left"></div>
-            <div class="starfield star-right"></div>
-            <div class="site-default-gradient">
-              <div class="safety-color"></div>
-            </div>
-            <div id="body-bg">
-              <div class="safety-color"></div>
-              <div class="main"></div>
-              <div class="color-fade"></div>
+        <div id="userDiv">
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              About
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">What is Kast?</a>
+              <a href="#">Blog</a>
+              <a href="#">Press Releases</a>
+              <a href="#">Company</a>
             </div>
           </div>
-        <div id = "main-one">
-            
-        </div>
-      </div>
-     <footer>
 
-     </footer>
-</body>
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Help
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Contact Support</a>
+              <a href="#">FAQ's</a>
+              <a href="#">Downloads</a>
+            </div>
+          </div>
+
+          <div class="dropdown">
+            <button class="dropbtn" onclick="myFunction()">
+              Community
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Community Guidlines</a>
+              <a href="#">Founders Hall of Fame</a>
+              <a href="#">Shop Kast Swag</a>
+            </div>
+          </div>
+         <div><button><a href="#premium">Premium</a></button></div> 
+         
+        </div>
+        <div> <button id="openApp">Open Kast</button></div>
+      </nav>
+    </header>
+    <section id="section1">
+      <p style="text-align:center"> <img src="assets/laptop-table.png"> </p>
+      <h1 style="text-align:center">Watch Parties made easy.</h1>
+      <h3 style="text-align:center">
+        Share movies, TV shows, and whatever you want with</h3>
+         <h3>friends online. Join millions of kasters today!</h3>
+      </h3>
+      <div style="text-align:center">
+      <button id="openKast"><a href="https://w.kast.live" target="_blank" class="button big try-web-lite">
+        Open Kast
+      </a></button>
+      </div>
+
+    </section>
+    <div id="section2div">
+    <section id="section2">
+      <br>
+
+      <h1 style="text-align:center">Featured In</h1>
+      <br>
+      <br>
+      <ul id="features">
+        <li>
+          <a>
+            <img src="assets/wired.JPG" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/nerdist.JPG" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/yahoo.JPG" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/eveningstandard.JPG" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/bbc.JPG" />
+          </a>
+        </li>
+        <li>
+          <a>
+            <img src="assets/dailymail.JPG" />
+          </a>
+        </li>
+      </ul>
+      <p style="text-align:right"> "Kast has probably never been more relevant-or necessary-than it is right
+      now." <br></p>
+      <br>
+      <p style="text-align:right">- Yahoo Finance </p>
+    </section>
+  </div>
+    <section id="section3">
+      <div class = "Main">
+      <div id = "text">
+      <h1 style="text-align:center">What is Kast?</h1>
+      <h3 style="text-align:center">
+        Looking for a place to watch movies, play, and hang out with friends?<br>
+        Hop onto Kast and start sharing experiences real-time!
+        <br>
+        <br>
+        <br>
+         Up to 20 people
+        can share their screen or camera and another 100 can
+        <br> watch.
+      </h3>
+    </div>
+  </div>
+    </section>
+  </body>
+</html>
